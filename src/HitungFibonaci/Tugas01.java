@@ -21,6 +21,8 @@ public class Tugas01 {
     }
     private static BigInteger fibo(int n)
     {
+        if(n>2)
+        {
         BigInteger[] hasil = new BigInteger[n];
         
         hasil[0] = BigInteger.ONE;
@@ -28,10 +30,12 @@ public class Tugas01 {
         
         for(int i = 2; i < n; i++)
         {
-            hasil[i] = hasil[i-1].add(hasil[i-2]);
+            hasil[i] = hasil[i-1].add(hasil[i-2]);    
         }
         return hasil[n-1];
-    }
+        }
+        return BigInteger.ONE;
+        }
     private static void tampilHasil(int n, BigInteger hasil)
     {
         System.out.println("Bilangan Fibonacci ke-" + n + " : " + hasil);
