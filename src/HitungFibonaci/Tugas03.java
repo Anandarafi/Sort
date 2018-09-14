@@ -23,7 +23,7 @@ public class Tugas03 {
         
         int berat = input();
 //       
-//        Proses(berat, Berat, Harga);
+        Proses(berat, Berat, Harga);
     }
     private static int input()
     {
@@ -34,21 +34,21 @@ public class Tugas03 {
        
        return berat;
     }
-//    private static void Proses(int berat, int[] Berat, int[] Harga)
-//    {
-//        int jumlah = 0;
-//        for(int i = 0; i < Berat.length; i++)
-//        {
-//            int n = 0;
-//            while(berat >= Berat[i])
-//            {
-//                berat = berat - Berat[i];
-//                n++;
-//            }
-//            int total = n*Harga[i];
-//            System.out.println(Berat[i] + " Kg" + " Sebanyak " + n + " dengan total harga Rp " + total);
-//            jumlah = jumlah + total;
-//        }
-//        System.out.println("\nTotal Bayaran : Rp " + jumlah);
-//    }
+    private static void Proses(int berat, int[] Berat, int[] Harga)
+    {
+        int jumlah = 0;
+        for(int i = 0; i < Berat.length; i++)
+        {
+            int n = 0;
+            while(berat >= Berat[i])
+            {
+                berat = berat - Berat[i];
+                n++;
+            }
+            int total = n*Harga[i];
+            System.out.println(Berat[i] + " Kg" + " Sebanyak " + n + " dengan total harga Rp " + total);
+            jumlah = jumlah + total;
+        }
+        System.out.println("\nTotal Bayaran : Rp " + jumlah);
+    }
 }
