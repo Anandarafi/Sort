@@ -9,8 +9,9 @@ public class Tugas02 {
       
     }
     public static void main(String[] args) {
+        String identitas = "Ananda Rafi Amanullah / X RPL 3 / 04";
         System.out.println("Pecahannya adalah Rp 5.000, Rp 2.000, Rp 1.000, Rp 500, Rp 100");
-         String identitas = "Ananda Rafi Amanullah / X RPL 3 / 04";
+         
         
         tampilJudul(identitas);
         int uang = input();
