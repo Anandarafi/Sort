@@ -12,6 +12,12 @@ import java.util.Scanner;
  * @author Anandarafi
  */
 public class Tugas03 {
+    private static void tampilJudul(String identitas)
+    {
+        System.out.println("Identitas : " + identitas);
+        
+    }
+    
     public static void main(String[] args) {
         System.out.println(" 7 KG = Rp 10.000");
         System.out.println(" 5 KG = Rp 7.000");
@@ -20,9 +26,11 @@ public class Tugas03 {
         System.out.println(" 2 KG = Rp 2.000");
         int[] Berat = new int[]{7, 5, 4, 3, 2};
         int[] Harga= new int[]{10000, 7000, 5000, 3000,2000};
+         String identitas = "Ananda Rafi Amanullah / X RPL 3 / 04";
         
+        tampilJudul(identitas);
         int berat = input();
-//       
+      
         Proses(berat, Berat, Harga);
     }
     private static int input()
