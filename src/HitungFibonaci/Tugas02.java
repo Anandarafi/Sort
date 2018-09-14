@@ -7,7 +7,7 @@ public class Tugas02 {
         int uang = input();
         int[] Nominal = new int[]{5000, 2000, 1000, 500, 100};
         
-//        JumlahUang(uang, Nominal);
+        JumlahUang(uang, Nominal);
     }
     private static int input()
     {
@@ -18,19 +18,19 @@ public class Tugas02 {
        
        return uang;
     }
-//    private static void JumlahUang(int uang, int[] Nominal)
-//    {
-//        for(int i = 0; i < Nominal.length; i++)
-//        {
-//            int n = 0;
-//            while(uang >= Nominal[i])
-//            {
-//                uang = uang - Nominal[i];
-//                n++;
-//            }
-//            System.out.println
-//        (Nominal[i] + " Sebanyak " + n + " lembar");
-//        }
-//    }
+    private static void JumlahUang(int uang, int[] Nominal)
+    {
+        for(int i = 0; i < Nominal.length; i++)
+        {
+            int n = 0;
+            while(uang >= Nominal[i])
+            {
+                uang = uang - Nominal[i];
+                n++;
+            }
+            System.out.println
+        (Nominal[i] + " Sebanyak " + n + " lembar");
+        }
+    }
  
 }
