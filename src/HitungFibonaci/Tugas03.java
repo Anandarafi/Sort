@@ -21,19 +21,19 @@ public class Tugas03 {
         int[] Berat = new int[]{7, 5, 4, 3, 2};
         int[] Harga= new int[]{10000, 7000, 5000, 3000,2000};
         
-//        int berat = input();
+        int berat = input();
 //       
 //        Proses(berat, Berat, Harga);
     }
-//    private static int input()
-//    {
-//       Scanner baca = new Scanner(System.in);
-//       
-//       System.out.print("Berat Barang :  ");
-//       int berat = baca.nextInt();
-//       
-//       return berat;
-//    }
+    private static int input()
+    {
+       Scanner baca = new Scanner(System.in);
+       
+       System.out.print("Berat Barang :  ");
+       int berat = baca.nextInt();
+       
+       return berat;
+    }
 //    private static void Proses(int berat, int[] Berat, int[] Harga)
 //    {
 //        int jumlah = 0;
