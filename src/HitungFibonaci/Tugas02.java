@@ -2,8 +2,17 @@
 package HitungFibonaci;
 import java.util.*;
 public class Tugas02 {
+     private static void tampilJudul(String identitas)
+    {
+        System.out.println("Identitas : " + identitas);
+        
+      
+    }
     public static void main(String[] args) {
         System.out.println("Pecahannya adalah Rp 5.000, Rp 2.000, Rp 1.000, Rp 500, Rp 100");
+         String identitas = "Ananda Rafi Amanullah / X RPL 3 / 04";
+        
+        tampilJudul(identitas);
         int uang = input();
         int[] Nominal = new int[]{5000, 2000, 1000, 500, 100};
         
